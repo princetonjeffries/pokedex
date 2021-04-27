@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+}
+
 @font-face {
   font-family: pokemon;
   src: url("font/Pokemon Hollow.ttf");
@@ -11,6 +30,7 @@
 body {
   background-image: url("../images/back.png");
   background-position-y: -16.5rem;
+  text-align: center;
 }
 
 body #cards {
