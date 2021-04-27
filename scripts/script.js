@@ -217,15 +217,31 @@ var charizard = JSON.stringify(charzJSON);
 let charizardOBJ = JSON.parse(charizard);
 var charmeleon = JSON.stringify(charmJSON);
 let charmeleonOBJ = JSON.parse(charmeleon);
+let current;
 function init() {
-    var page = window.location.href;
+    var page = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);;
     console.log(page);
-    //switch(page){
-      //  case
-    //}
-    if(page == 'file:///C:/Users/pjeffr263/Desktop/Pokedex/charmander.html'){
-        console.log('works');
+    switch(page){
+      case('charmander.html'):
+        current = charmanderOBJ;
+        break;
+      case('charizard.html'):
+        current = charizardOBJ;
+        break;
+      case('charmeleon.html'):
+        current = charmeleonOBJ;
+        break;
     }
 }
 window.onload = init();
+console.log(current);
+document.getElementById('name').innerHTML = current.name;
+document.getElementById('abilitiesname1').innerHTML =current.abilities[0].name;
+document.getElementById('abilitiesname2').innerHTML =current.abilities[1].name;
+document.getElementById('base_experience').innerHTML = 'Base experience: ' + current.base_experience;
+document.getElementById('height').innerHTML = 'Height: ' + current.height;
+document.getElementById('id').innerHTML = 'Id: ' + current.id;
+document.getElementById('is_default').innerHTML = 'Default: ' + current.is_default;
+document.getElementById('order').innerHTML = 'Order: ' + current.order;
+document.getElementById('stateName1').innerHTML = current.stats[0].stat.name
 //charmander
