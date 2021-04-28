@@ -5,10 +5,11 @@
 }
 .back{
     position:absolute;
+    color:white;
 }
 a{
     text-decoration: none;
-    color:black;
+    color:white;
 }
 .table{
     color: white;
@@ -16,19 +17,25 @@ a{
         font-weight: 100;
     }
 }
-#poke{
-    border:white 1px solid;
-}
+
 #stats{
     display:flex;
     justify-content: center;
     flex-direction: row;
 }
+.container-fluid{
+    background-color:rgba(0, 0, 0, 0.589);
+    h1{
+        text-align: center;
+        font-family: pokemon;
+        font-size: 4rem;
+        color: white;
+    }
+}
 .content{
     display:flex;
     justify-content: center;
     flex-direction: row;
-    background-color:rgba(0, 0, 0, 0.589);
     flex-wrap: wrap;
     color:white;
     div{
@@ -49,7 +56,8 @@ a{
 }
 body{
     background-image: url("../images/back.png");
-    background-position-y: -16.5rem;
+    background-position:center;
+    background-size:cover;
     background-attachment: fixed;
     text-align:center;
     font-family:vcr;
@@ -84,6 +92,7 @@ body{
     h5{
         font-family: car;
         font-size: 2.7rem;
+        font-weight: 100;
     }
     .card{
         margin-top: 3rem;
