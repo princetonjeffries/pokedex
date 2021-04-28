@@ -12,48 +12,63 @@
         <h1><a href='index.html'><</a></h1>
     </div>
     <div class="container-fluid">
-
         <h1 id='name'></h1>
-        <img src='images/melon.png'>
+        <div class="content">
+            <img id='poke'src='images/melon.png' class='rounded float-start'>
         <div class="abilities">
-            <h2 id='abilities'>Abilities</h2>
-            <h4 id='abilitiesname1'></h4>
-            <h4 id='abilitiesname2'></h4>
+                <h2 id='abilities'>Abilities</h2>
+                <h4 id='abilitiesname1'></h4>
+                <h4 id='abilitiesname2'></h4>
+            </div>
+            <div class="div">
+                <h3 id='base_experience'></h3>
+                <h3 id='height'></h3>
+                <h3 id='id'></h3>
+                <h3 id='is_default'></h3>
+                <h3 id='order'></h3>
+                <h4 id='type'></h4>
+                <h4 id='slot'></h4>
+                <h4 id='weight'></h4>
+            </div>
+            <!--Table of Stats-->
+            <table class="table">
+                <th class='text-center' colspan='3'>Stats</th>
+                <tbody>
+                  <tr>
+                    <th scope="row"id='statName1'></th>
+                    <td id='base_stat1'></td>
+                    <td id='effort1'></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"id='statName2'></th>
+                    <td id='base_stat2'></td>
+                    <td id='effort2'></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"id='statName3'></th>
+                    <td id='base_stat3'></td>
+                    <td id='effort3'></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"id='statName4'></th>
+                    <td id='base_stat4'></td>
+                    <td id='effort4'></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"id='statName5'></th>
+                    <td id='base_stat5'></td>
+                    <td id='effort5'></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"id='statName6'></th>
+                    <td id='base_stat6'></td>
+                    <td id='effort6'></td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
-        <h3 id='base_experience'></h3>
-        <h3 id='height'></h3>
-        <h3 id='id'></h3>
-        <h3 id='is_default'></h3>
-        <h3 id='order'></h3>
-        <div class="stats">
-            <h3 id='stats'></h3>
-            <h4 id='statName1'></h4>
-            <h4 id='base_stat1'></h4>
-            <h4 id='effort1'></h4>
-            <h4 id='statName2'></h4>
-            <h4 id='base_stat2'></h4>
-            <h4 id='effort2'></h4>
-            <h4 id='statName3'></h4>
-            <h4 id='base_stat3'></h4>
-            <h4 id='effort3'></h4>
-            <h4 id='statName4'></h4>
-            <h4 id='base_stat4'></h4>
-            <h4 id='effort4'></h4>
-            <h4 id='statName5'></h4>
-            <h4 id='base_stat5'></h4>
-            <h4 id='effort5'></h4>
-            <h4 id='statName6'></h4>
-            <h4 id='base_stat6'></h4>
-            <h4 id='effort6'></h4>
-        </div>
-        <div class="types">
-            <h4 id='type'></h4>
-            <h4 id='slot'></h4>
-        </div>
-        <h4 id='weight'></h4>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src='scripts/script.js'></script>
-    
 </body>
 </html>

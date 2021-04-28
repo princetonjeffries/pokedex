@@ -1,5 +1,4 @@
-$font1:pokemon;
-$font2:car;
+
 *{
     margin:0;
     padding:0;
@@ -11,29 +10,52 @@ a{
     text-decoration: none;
     color:black;
 }
+.table{
+    color: white;
+    th{
+        font-weight: 100;
+    }
+}
 #poke{
     border:white 1px solid;
 }
+#stats{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
 .content{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     background-color:rgba(0, 0, 0, 0.589);
+    flex-wrap: wrap;
     color:white;
+    div{
+        margin:15px;
+    }
 }
 @font-face{
     font-family: pokemon;
-    src: url("font/Pokemon\ Hollow.ttf");
+    src: url('../font/Pokemon\ Hollow.ttf');
 }
 @font-face{ 
     font-family: car;
-    src: url("font/Pokemon\ Solid.ttf");
+    src: url("../font/Pokemon\ Solid.ttf");
+}
+@font-face{ 
+    font-family: vcr;
+    src: url("../font/VCR_OSD_MONO_1.001.ttf");
 }
 body{
     background-image: url("../images/back.png");
     background-position-y: -16.5rem;
     background-attachment: fixed;
     text-align:center;
+    font-family:vcr;
+    h1{
+        font-family:pokemon;
+    }
  #cards{
         display: flex;
         justify-content: space-evenly;
@@ -60,7 +82,7 @@ body{
         color: black;
     }
     h5{
-        font-family: $font2;
+        font-family: car;
         font-size: 2.7rem;
     }
     .card{
