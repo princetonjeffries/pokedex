@@ -1,11 +1,20 @@
-$('#card').hover(function(){
-  $('#image').animate({height: "17rem", width: "20rem"})
+$('#card').mouseenter(function(){
+  $('#image').animate({height: "17rem", width: "22rem"})
 });
-$('#card1').hover(function(){
-  $('#image1').animate({height: "17rem", width: "20rem"})
+$('#card').mouseleave(function(){
+  $('#image').animate({height: "15rem", width: "18rem"})
 });
-$('#card2').hover(function(){
-  $('#image2').animate({height: "17rem", width: "20rem"})
+$('#card1').mouseenter(function(){
+  $('#image1').animate({height: "17rem", width: "22rem"})
+});
+$('#card1').mouseleave(function(){
+  $('#image1').animate({height: "15rem", width: "18rem"})
+});
+$('#card2').mouseenter(function(){
+  $('#image2').animate({height: "17rem", width: "22rem"})
+});
+$('#card2').mouseleave(function(){
+  $('#image2').animate({height: "15rem", width: "18rem"})
 });
 let charJSON = {
     "abilities": [
