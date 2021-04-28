@@ -32,6 +32,10 @@ a{
         color: white;
     }
 }
+#poke:hover{
+    transform:scale(1.25);
+    transition: .5s;
+}
 .content{
     display:flex;
     justify-content: center;

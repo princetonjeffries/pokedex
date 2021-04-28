@@ -45,6 +45,13 @@ a {
   color: white;
 }
 
+#poke:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
