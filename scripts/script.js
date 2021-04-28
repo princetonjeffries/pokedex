@@ -1,3 +1,12 @@
+$('#card').hover(function(){
+  $('#image').animate({height: "17rem", width: "20rem"})
+});
+$('#card1').hover(function(){
+  $('#image1').animate({height: "17rem", width: "20rem"})
+});
+$('#card2').hover(function(){
+  $('#image2').animate({height: "17rem", width: "20rem"})
+});
 let charJSON = {
     "abilities": [
       {
@@ -265,3 +274,5 @@ document.getElementById('slot').innerHTML = 'Slot: ' + current.types[0].slot;
 document.getElementById('type').innerHTML = 'Type: ' + current.types[0].type.name;
 document.getElementById('weight').innerHTML = 'Weight: ' + current.weight;
 //charmander
+
+
