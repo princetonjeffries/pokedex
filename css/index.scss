@@ -11,7 +11,13 @@ a{
     text-decoration: none;
     color:black;
 }
+#poke{
+    border:white 1px solid;
+}
 .content{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
     background-color:rgba(0, 0, 0, 0.589);
     color:white;
 }
@@ -26,6 +32,7 @@ a{
 body{
     background-image: url("../images/back.png");
     background-position-y: -16.5rem;
+    background-attachment: fixed;
     text-align:center;
  #cards{
         display: flex;

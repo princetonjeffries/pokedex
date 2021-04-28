@@ -12,7 +12,21 @@ a {
   color: black;
 }
 
+#poke {
+  border: white 1px solid;
+}
+
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: rgba(0, 0, 0, 0.589);
   color: white;
 }
@@ -30,6 +44,7 @@ a {
 body {
   background-image: url("../images/back.png");
   background-position-y: -16.5rem;
+  background-attachment: fixed;
   text-align: center;
 }
 
